@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class BtnHandler : MonoBehaviour
 {
+    public GameObject Canva_main;
     public GameObject Canva_minigame;
     public GameObject Panel_mission;
     public void Canva_minigame_control()
     {
-        if(Canva_minigame.active)
+        if(Canva_minigame.activeInHierarchy)
             Canva_minigame.SetActive(false);
         else
             Canva_minigame.SetActive(true);
@@ -20,28 +21,28 @@ public class BtnHandler : MonoBehaviour
     public void selectCategory()
     {
         MainSystem.category = Category;
-        Debug.Log(Panel_mission.active);
         Panel_mission.SetActive(true);
     }
 
     public int mission;
+    public GameObject Canva_Article;
     public GameObject Canva_Quiz;
     public void selectMission()
     {
         MainSystem.mission = mission;
-        switch (mission)
-        {
-            case 1:
-                Canva_Quiz.SetActive(true);
-                Canva_minigame.SetActive(false);
-                break ;
-        }
-        
+        Canva_Article.SetActive(true);
+        Canva_minigame.SetActive(false);
+        Canva_main.SetActive(false);
+    }
+
+    public void selectStar()
+    {
+        MainSystem.is_placing = true;
     }
 
     public void debug()
     {
-        Debug.Log(MainSystem.category);
+        Debug.Log(Canva_minigame.activeInHierarchy);
     }
 
 }
