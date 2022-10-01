@@ -68,4 +68,20 @@ public class BtnHandler : MonoBehaviour
         }
     }
 
+    public GameObject nightsky;
+    public GameObject nightsky_empty;
+    public void switch_view()
+    {
+        if (nightsky.activeInHierarchy)
+        {
+            nightsky.SetActive(false);
+            nightsky_empty.SetActive(true);
+        }
+        else
+        {
+            nightsky.SetActive(true);
+            nightsky_empty.SetActive(false);
+        }
+    }
+
 }
