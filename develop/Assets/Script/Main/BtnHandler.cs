@@ -26,13 +26,29 @@ public class BtnHandler : MonoBehaviour
 
     public int mission;
     public GameObject Canva_Article;
-    public GameObject Canva_Quiz;
+    public GameObject ArticleManager;
     public void selectMission()
     {
         MainSystem.mission = mission;
-        Canva_Article.SetActive(true);
         Canva_minigame.SetActive(false);
         Canva_main.SetActive(false);
+        Canva_Article.SetActive(true);
+        ArticleManager.SetActive(true);
+        // game_start();
+    }
+
+    public GameObject Canva_Quiz;
+    public GameObject QuizManager;
+    public void game_start()
+    {
+        Canva_Article.SetActive(false);
+        switch(MainSystem.mission)
+        {
+            case (1):
+                Canva_Quiz.SetActive(true);
+                QuizManager.SetActive(true);
+                break ;
+        }
     }
 
     public void selectStar()

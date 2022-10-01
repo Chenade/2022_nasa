@@ -25,8 +25,9 @@ public class MainSystem : MonoBehaviour
     public static bool delta_time_change;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+        category = 1;
         delta_time = 0.5f;
         delta_time_change = false;
     }

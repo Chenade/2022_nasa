@@ -7,24 +7,25 @@ using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
-   public List<QuestionAndAnswer> QnA;
    public GameObject[] options;
-   public int currentQuestion;
 
    public GameObject Quizpanel;
    public GameObject GoPanel;
 
    public TextMeshProUGUI QuestionTxt;
    public TextMeshProUGUI ScoreTxt;
+   public TextMeshProUGUI AnsTxt;
 
-   int TotalQuestions = 0;
    public int score;
-   int count = 3;
-
+   
+   private int currentQuestion;
+   private int count = 0;
+   private int[] selected;
+   
    private void Start()
    {
-        TotalQuestions = 3;
         GoPanel.SetActive(false);
+        JsonReader.section = JsonReader.information.game[MainSystem.category - 1];
         generateQuestion();
    }
 
@@ -37,19 +38,17 @@ public class QuizManager : MonoBehaviour
     {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
-        ScoreTxt.text = score + "/" + TotalQuestions;
+        ScoreTxt.text = score + "/ 3";
     }
 
     public void correct()
     {
         score += 1;
-        QnA.RemoveAt(currentQuestion);
         StartCoroutine(waitForNext());
     }
 
     public void wrong()
     {
-        QnA.RemoveAt(currentQuestion);
         StartCoroutine(waitForNext());
     }
 
@@ -63,11 +62,11 @@ public class QuizManager : MonoBehaviour
    {
         for (int i = 0; i < options.Length; i++)
         {
-            options [i].GetComponent <Image>().color = options [i].GetComponent <AnswerScript>().startcolor;
+            options[i].GetComponent <Image>().color = options [i].GetComponent <AnswerScript>().startcolor;
             options[i].GetComponent<AnswerScript>().isCorrect= false;
-            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[currentQuestion].Answers[i];  
+            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = JsonReader.section.members[currentQuestion].answers[i];  
 
-            if(QnA[currentQuestion].CorrectAnswer == i + 1)
+            if(JsonReader.section.members[currentQuestion].correct == i + 1)
             {
                options[i].GetComponent<AnswerScript>().isCorrect= true; 
             }
@@ -76,15 +75,16 @@ public class QuizManager : MonoBehaviour
 
    void generateQuestion()
    {
-        if(count > 0)
+        if(count < 3)
         {
-            for (int i = 0; i < 3; i++)
-            {
-                currentQuestion = Random.Range(0, QnA.Count);
-                QuestionTxt.text = QnA[currentQuestion].Question;
-                SetAnswers();
-            }
-            count--;
+            currentQuestion = Random.Range(0, JsonReader.section.members.Length);
+            while (JsonReader.section.members[currentQuestion].is_selected)
+                currentQuestion = Random.Range(0, JsonReader.section.members.Length);
+            JsonReader.section.members[currentQuestion].is_selected = true;
+            QuestionTxt.text = JsonReader.section.members[currentQuestion].question;
+            AnsTxt.text = JsonReader.section.members[currentQuestion].correct.ToString();
+            SetAnswers();
+            count += 1;
         }
         else
         {
