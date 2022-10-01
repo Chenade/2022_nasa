@@ -24,12 +24,17 @@ public class MainSystem : MonoBehaviour
     public static float delta_time;
     public static bool delta_time_change;
 
-    // Start is called before the first frame update
+    public static int[ , ] status = { {2, 1, 1}, {2, 1, 1}, {2, 1, 1}, {2, 1, 0}, {2, 1, 0}, {2, 1, 0} };
+    // 0: not support
+    // 1: unavailable
+    // 2: available
+
     void Awake()
     {
         category = 1;
         delta_time = 0.5f;
         delta_time_change = false;
+
     }
 
     // Update is called once per frame

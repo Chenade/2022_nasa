@@ -11,6 +11,10 @@ public class QuizManager : MonoBehaviour
 
    public GameObject Quizpanel;
    public GameObject GoPanel;
+   
+   public GameObject Canva_main;
+   public GameObject Canva_Quiz;
+   public GameObject Canva_Article;
 
    public TextMeshProUGUI QuestionTxt;
    public TextMeshProUGUI ScoreTxt;
@@ -20,18 +24,22 @@ public class QuizManager : MonoBehaviour
    
    private int currentQuestion;
    private int count = 0;
-   private int[] selected;
    
-   private void Start()
+   public void OnEnable()
    {
+        Debug.Log("Quiz start!");
+        score = 0;
+        count = 0;
         GoPanel.SetActive(false);
+        Quizpanel.SetActive(true);
         JsonReader.section = JsonReader.information.game[MainSystem.category - 1];
         generateQuestion();
    }
 
    public void retry()
    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Canva_Quiz.SetActive(false);
+        Canva_Article.SetActive(true);
    }
 
     public void GameOver()
@@ -39,6 +47,11 @@ public class QuizManager : MonoBehaviour
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
         ScoreTxt.text = score + "/ 3";
+        if (score == 3)
+        {
+            MainSystem.status[MainSystem.category - 1,1] = 2;
+            MainSystem.mission = 2;
+        }
     }
 
     public void correct()
@@ -64,9 +77,9 @@ public class QuizManager : MonoBehaviour
         {
             options[i].GetComponent <Image>().color = options [i].GetComponent <AnswerScript>().startcolor;
             options[i].GetComponent<AnswerScript>().isCorrect= false;
-            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = JsonReader.section.members[currentQuestion].answers[i];  
+            options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = JsonReader.section.quiz[currentQuestion].answers[i];  
 
-            if(JsonReader.section.members[currentQuestion].correct == i + 1)
+            if(JsonReader.section.quiz[currentQuestion].correct == i + 1)
             {
                options[i].GetComponent<AnswerScript>().isCorrect= true; 
             }
@@ -77,12 +90,12 @@ public class QuizManager : MonoBehaviour
    {
         if(count < 3)
         {
-            currentQuestion = Random.Range(0, JsonReader.section.members.Length);
-            while (JsonReader.section.members[currentQuestion].is_selected)
-                currentQuestion = Random.Range(0, JsonReader.section.members.Length);
-            JsonReader.section.members[currentQuestion].is_selected = true;
-            QuestionTxt.text = JsonReader.section.members[currentQuestion].question;
-            AnsTxt.text = JsonReader.section.members[currentQuestion].correct.ToString();
+            currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
+            while (JsonReader.section.quiz[currentQuestion].is_selected)
+                currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
+            JsonReader.section.quiz[currentQuestion].is_selected = true;
+            QuestionTxt.text = JsonReader.section.quiz[currentQuestion].question;
+            AnsTxt.text = JsonReader.section.quiz[currentQuestion].correct.ToString();
             SetAnswers();
             count += 1;
         }

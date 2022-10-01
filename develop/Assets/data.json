@@ -1,8 +1,13 @@
 {
 	"game": [{
 			"topic": "Cepheid Variables",
-			"about": "Cepheid Variables are stars which brighten and dim periodically. They can vary both in temperature and diameter. They pulsate because there is a periodic expansion and contraction of the surface layer of the star. In 1912, a woman called Henrietta Swan Leavitt noticed that some stars were getting brighter and dimmer and was able to measure the timing of these ups and downs. With these measurements, the scientist could determine the period of these stars. With this, by calculating the absolute magnitude and the apparent magnitude we can infer the distance of these stars to Earth. They became ‘standard candles’. For example, when there are two stars with the same apparent magnitude but different periods, the one with the longest period is farther away. This behaviour exhibits a relation between period and luminosity in the sense that the longer the period of the star, the greater its intrinsic brightness; this period-luminosity relationship has been used to establish the distances in the universe. Leavitt was able to measure the period of each star by measuring the timing of its fluctuations in brightness. What she determined was that the brighter the Cepheid, the longer its period. In fact, Cepheids are very special variable stars because their period is regular. Once the intrinsic brightness is known, the distance of the star can be deduced from a comparison of intrinsic and apparent (measured) brightness.",
-			"members": [{
+			"about": [
+				"Cepheid Variables are stars which brighten and dim periodically. They can vary both in temperature and diameter. They pulsate because there is a periodic expansion and contraction of the surface layer of the star.",
+				"In 1912, a woman called Henrietta Swan Leavitt noticed that some stars were getting brighter and dimmer and was able to measure the timing of these ups and downs. With these measurements, the scientist could determine the period of these stars. With this, by calculating the absolute magnitude and the apparent magnitude we can infer the distance of these stars to Earth. They became ‘standard candles’.",
+				"For example, when there are two stars with the same apparent magnitude but different periods, the one with the longest period is farther away. This behaviour exhibits a relation between period and luminosity in the sense that the longer the period of the star, the greater its intrinsic brightness; this period-luminosity relationship has been used to establish the distances in the universe.",
+				"Leavitt was able to measure the period of each star by measuring the timing of its fluctuations in brightness. What she determined was that the brighter the Cepheid, the longer its period. In fact, Cepheids are very special variable stars because their period is regular. Once the intrinsic brightness is known, the distance of the star can be deduced from a comparison of intrinsic and apparent (measured) brightness."
+			],
+			"quiz": [{
 					"question": "The amount of time for a single Cepheid variable cycle to occur (peak brightness to peak brightness) is called a",
 					"answers": [
 						"Luminosity rate",
@@ -68,12 +73,18 @@
 					"correct": 4,
 					"is_selected": false
 				}
-			]
+			],
+			"simulation": ["Cephid stars are intrinsic variables, they pulsate due to a periodic expansion and contraction of the surface layer", "Pay attention to how the light curve correspond to the variable star system as it oscillates"],
+			"calculation": "To know how far away a Cepheid variable is we must compare its apparent magnitude with its absolute magnitude. We can find the absolute magnitude with the variable's period because they are correlated. The difference between the apparent magnitude and the absolute magnitude yields the distance"
 		},
 		{
 			"topic": "Eclipsing Binary system",
-			"about": "A Binary system consists of two stars that emerge out of a cloud of gaseous material collapsing. Eclipsing binaries are variable stars, not because the light of the individual components vary but because of the eclipses. The light curve of an eclipsing binary is characterised by periods of practically constant light, with periodic drops in intensity when one star passes in front of the other. The brightness may drop twice during the orbit, once when the secondary passes in front of the primary and once when the primary passes in front of the secondary. An eclipsing binary's period of orbit may be determined from a study of its light curve, and the relative sizes of the individual stars can be determined in terms of the radius of the orbit, by observing how quickly the brightness changes as the stars pass by each other. Since about 1995, measurement of the fundamental parameters of extragalactic eclipsing binaries has become possible with 8-meter class telescopes. This makes it possible to use them to directly measure the distances to external galaxies, a process that is more accurate than using standard candles (Cepheid variables). Eclipsing binaries offer a direct method to gauge the distance to galaxies with 5% better accuracy.",
-			"members": [{
+			"about": [
+				"A Binary system consists of two stars that emerge out of a cloud of gaseous material collapsing. Eclipsing binaries are variable stars, not because the light of the individual components vary but because of the eclipses. The light curve of an eclipsing binary is characterised by periods of practically constant light, with periodic drops in intensity when one star passes in front of the other.",
+				"The brightness may drop twice during the orbit, once when the secondary passes in front of the primary and once when the primary passes in front of the secondary. An eclipsing binary's period of orbit may be determined from a study of its light curve, and the relative sizes of the individual stars can be determined in terms of the radius of the orbit, by observing how quickly the brightness changes as the stars pass by each other.",
+				"Since about 1995, measurement of the fundamental parameters of extragalactic eclipsing binaries has become possible with 8-meter class telescopes. This makes it possible to use them to directly measure the distances to external galaxies, a process that is more accurate than using standard candles (Cepheid variables). Eclipsing binaries offer a direct method to gauge the distance to galaxies with 5% better accuracy."
+			],
+			"quiz": [{
 					"question": "A binary system is",
 					"answers": [
 						"A star system consisting of 0 or 1 components",
@@ -139,12 +150,17 @@
 					"correct": 2,
 					"is_selected": false
 				}
-			]
+			],
+			"simulation": ["The Eclipsing binary system is an extrinsic variable, it's perceived brightness fluctuates as each star passes in front of the other as they orbit, blocking light from reaching Earth.", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"]
 		},
 		{
 			"topic": "Cataclysmic Variables",
-			"about": "A Cataclysmic Variable (CV) is a type of star system that irregularly has bursts of increased brightness. It is a binary system made up of two stars: The primary white dwarf star, and the companion star. The stars are so close together (the whole system being about the size of the earth and the moon), that the white dwarf accretes matter from the companion. Normally the accretion of matter forms what is called an accretion disc (see image below). The irregular bursts of increased brightness are caused by nova outbursts. The classical nova outburst happens when the matter from the accretion disc builds up on the surface of the hot white dwarf and reaches a temperature that causes a runaway hydrogen fusion reaction. This causes a very bright outburst. Another type of outburst, called the dwarf nova, is caused by instability in the accretion disc. When the gas reaches a critical temperature, it changes the viscosity of the disc which results in an increase in the rate of accretion into the white dwarf, temporarily heating the whole disc. Dwarf nova are less bright than classical nova but happen more frequently. Under certain circumstances the white dwarf can supernova which causes a very bright outburst.",
-			"members": [{
+			"about": [
+				"A Cataclysmic Variable (CV) is a type of star system that irregularly has bursts of increased brightness. It is a binary system made up of two stars: The primary white dwarf star, and the companion star. The stars are so close together (the whole system being about the size of the earth and the moon), that the white dwarf accretes matter from the companion. Normally the accretion of matter forms what is called an accretion disc (see image below).",
+				"The irregular bursts of increased brightness are caused by nova outbursts. The classical nova outburst happens when the matter from the accretion disc builds up on the surface of the hot white dwarf and reaches a temperature that causes a runaway hydrogen fusion reaction. This causes a very bright outburst.",
+				"Another type of outburst, called the dwarf nova, is caused by instability in the accretion disc. When the gas reaches a critical temperature, it changes the viscosity of the disc which results in an increase in the rate of accretion into the white dwarf, temporarily heating the whole disc. Dwarf nova are less bright than classical nova but happen more frequently. Under certain circumstances the white dwarf can supernova which causes a very bright outburst."
+			],
+			"quiz": [{
 					"question": "A classical nova outburst is",
 					"answers": [
 						"The same as a supernova explosion",
@@ -210,12 +226,19 @@
 					"correct": "",
 					"is_selected": false
 				}
-			]
+			],
+			"simulation": ["Cataclysmic are composed of two stars, a white dwarf and a companion star. The dwars accretes material from the companion star forming an accretion disc in the process", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"]
 		},
 		{
 			"topic": "Supernova",
-			"about": "One type of supernova is caused by the end of life of a dying massive star. This happens when a star at least 8 times the mass of our sun goes out with an explosion. A star is in balance between two opposite forces. The star’s gravity tries to squeeze the star into the smallest, tightest ball possible. But the nuclear fuel burning in the star’s core creates strong outward pressure. This outward push resists the inward squeeze of gravity. A supernova explosion will occur when there is no longer enough fuel for the fusion process in the core of the star to create an outward pressure which combats the inward gravitational pull of the star's great mass. First, the star will swell into a red supergiant on the outside. On the inside, the core yields to gravity and begins shrinking. As it shrinks, it grows hotter and denser. When a massive star runs out of fuel, it cools off. This causes the pressure to drop. Gravity wins out, and the star suddenly collapses. The collapse happens so quickly that it creates enormous shock waves that cause the outer part of the star to explode! Usually a very dense core is left behind, along with an expanding cloud of hot gas called a nebula. A supernova of a star more than about 10 times the size of our sun may leave behind the densest object in the universe – a black hole. This type of supernova can happen in systems where two stars orbit one another and at least one of those stars is a white dwarf. A white dwarf is about the size of the earth and it is what's left after a star the size of up to about 8 times that of the sun has run out of fuel. The white dwarf can gain mass and density from the “companion” star and this gain could eventually result in the dwarf reaching the Chandrasekhar limit of 1.4 solar masses. As it approaches that limit, pressure builds and the internal temperature rises enough for carbon fusion to begin. The majority of white dwarfs are composed mostly of carbon, and when this fusion occurs, all the carbon undergoes fusion instantly. The result is a white dwarf supernova. Scientists have learned a lot about the universe by studying supernovas. They use the white dwarf type of supernova like a ruler to measure distances in space.",
-			"members": [{
+			"about": [
+				"One type of supernova is caused by the end of life of a dying massive star. This happens when a star at least 8 times the mass of our sun goes out with an explosion. A star is in balance between two opposite forces. The star’s gravity tries to squeeze the star into the smallest, tightest ball possible. But the nuclear fuel burning in the star’s core creates strong outward pressure. This outward push resists the inward squeeze of gravity.",
+				"A supernova explosion will occur when there is no longer enough fuel for the fusion process in the core of the star to create an outward pressure which combats the inward gravitational pull of the star's great mass. First, the star will swell into a red supergiant on the outside. On the inside, the core yields to gravity and begins shrinking. As it shrinks, it grows hotter and denser. When a massive star runs out of fuel, it cools off.",
+				"This causes the pressure to drop. Gravity wins out, and the star suddenly collapses. The collapse happens so quickly that it creates enormous shock waves that cause the outer part of the star to explode! Usually a very dense core is left behind, along with an expanding cloud of hot gas called a nebula. A supernova of a star more than about 10 times the size of our sun may leave behind the densest object in the universe – a black hole.",
+				"Another type of supernova can happen in systems where two stars orbit one another and at least one of those stars is a white dwarf. A white dwarf is about the size of the earth and it is what's left after a star the size of up to about 8 times that of the sun has run out of fuel. The white dwarf can gain mass and density from the “companion” star and this gain could eventually result in the dwarf reaching the Chandrasekhar limit of 1.4 solar masses.",
+				"As it approaches that limit, pressure builds and the internal temperature rises enough for carbon fusion to begin. The majority of white dwarfs are composed mostly of carbon, and when this fusion occurs, all the carbon undergoes fusion instantly. The result is a white dwarf supernova. Scientists have learned a lot about the universe by studying supernovas. They use the white dwarf type of supernova like a ruler to measure distances in space."
+			],
+			"quiz": [{
 					"question": "Stars which are _______ massive than our Sun go supernova.",
 					"answers": [
 						"15 times less",
@@ -281,12 +304,17 @@
 					"correct": "",
 					"is_selected": false
 				}
-			]
+			],
+			"simulation": ["Type 1a supernova is quite an explosive event! It happens when a white dwarf star reaches its mass limit and it collapses into itself.", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"],
+			"calculation": ["Type 1a supernova always reach the same peak brightness so we already know the absolute magnitude. All we have to do is observe the apparent magnitude and calculate the difference to get the distance from earth"]
 		},
 		{
 			"topic": "Rotational Variables",
-			"about": "All stars rotate, so what does the term rotating variables mean? These stars are variable due to irregularities on the surface or because they have been distorted into ellipsoidal shapes by the gravitational tug of a nearby companion star. As these irregularities or shapes rotate in and out of view we perceive changes in the star's luminosity. The star doesn’t actually produce more light, only the perceived brightness changes. Therefore it is an extrinsic variable. In a contact binary system they are so close that they touch each other. In this system, the more massive primary component transfers both mass and luminosity to the secondary member. As a result, the components in a contact binary often have similar effective temperatures and luminosities, regardless of their respective masses. Rotating variables shouldn’t be confused with eclipsing systems whose luminosity changes due to their orbits rather than the actual rotation of the star/stars.",
-			"members": [{
+			"about": [
+				"All stars rotate, so what does the term rotating variables mean? These stars are variable due to irregularities on the surface or because they have been distorted into ellipsoidal shapes by the gravitational tug of a nearby companion star. As these irregularities or shapes rotate in and out of view we perceive changes in the star's luminosity. The star doesn’t actually produce more light, only the perceived brightness changes. Therefore it is an extrinsic variable.",
+				"In a contact binary system they are so close that they touch each other. In this system, the more massive primary component transfers both mass and luminosity to the secondary member. As a result, the components in a contact binary often have similar effective temperatures and luminosities, regardless of their respective masses. Rotating variables shouldn’t be confused with eclipsing systems whose luminosity changes due to their orbits rather than the actual rotation of the star/stars."
+			],
+			"quiz": [{
 					"question": "Extrinsic variables are stars where the variability is caused by properties such as _______",
 					"answers": [
 						"angular velocity",
@@ -352,77 +380,8 @@
 					"correct": "",
 					"is_selected": false
 				}
-			]
-		},
-		{
-			"topic": "",
-			"members": [{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				},
-				{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				},
-				{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				},
-				{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				},
-				{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				},
-				{
-					"question": "",
-					"answers": [
-						"",
-						"",
-						"",
-						""
-					],
-					"correct": "",
-					"is_selected": false
-				}
-			]
+			],
+			"simulation": ["The rotational variable is two stars that are so close that they touch. As one side is much larger than the other it appears a lot brighter for half of the rotation of the system", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"]
 		}
 	]
 }

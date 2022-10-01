@@ -18,10 +18,17 @@ public class BtnHandler : MonoBehaviour
     }
 
     public int Category;
+    public GameObject[] btn_mission;
+    public Button[] _btn_mission;
     public void selectCategory()
     {
         MainSystem.category = Category;
         Panel_mission.SetActive(true);
+        for (int i = 0; i < 3; i++)
+        {
+            btn_mission[i].SetActive((MainSystem.status[MainSystem.category - 1, i] == 0) ? false : true);
+            _btn_mission[i].enabled = ((MainSystem.status[MainSystem.category - 1, i] == 2) ? true : false);
+        }
     }
 
     public int mission;
@@ -35,20 +42,6 @@ public class BtnHandler : MonoBehaviour
         Canva_Article.SetActive(true);
         ArticleManager.SetActive(true);
         // game_start();
-    }
-
-    public GameObject Canva_Quiz;
-    public GameObject QuizManager;
-    public void game_start()
-    {
-        Canva_Article.SetActive(false);
-        switch(MainSystem.mission)
-        {
-            case (1):
-                Canva_Quiz.SetActive(true);
-                QuizManager.SetActive(true);
-                break ;
-        }
     }
 
     public void selectStar()
