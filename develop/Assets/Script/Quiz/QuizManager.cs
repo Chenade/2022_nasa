@@ -32,25 +32,37 @@ public class QuizManager : MonoBehaviour
         count = 0;
         GoPanel.SetActive(false);
         Quizpanel.SetActive(true);
-        JsonReader.section = JsonReader.information.game[MainSystem.category - 1];
+        JsonReader.section = JsonReader.information.game[MainSystem.category];
         generateQuestion();
    }
 
    public void retry()
    {
         Canva_Quiz.SetActive(false);
-        Canva_Article.SetActive(true);
+        Canva_main.SetActive(true);
    }
 
+    public TextMeshProUGUI text_category;
+    public GameObject text_pass;
+    public GameObject text_failed;
     public void GameOver()
     {
         Quizpanel.SetActive(false);
         GoPanel.SetActive(true);
+        text_category.text = JsonReader.information.game[MainSystem.category].topic;
         ScoreTxt.text = score + "/ 3";
         if (score == 3)
         {
-            MainSystem.status[MainSystem.category - 1,1] = 2;
+            // MainSystem.status[MainSystem.category,1] = 2;
+            MainSystem.collected[MainSystem.category] += 1;
             MainSystem.mission = 2;
+            text_failed.SetActive(false);
+            text_pass.SetActive(true);
+        }
+        else
+        {
+            text_pass.SetActive(false);
+            text_failed.SetActive(true);
         }
     }
 

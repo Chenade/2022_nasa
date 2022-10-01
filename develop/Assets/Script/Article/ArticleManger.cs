@@ -26,19 +26,19 @@ public class ArticleManger : MonoBehaviour
         switch (MainSystem.mission)
         {
             case (1):
-                content = JsonReader.information.game[MainSystem.category - 1].about;
+                content = JsonReader.information.game[MainSystem.category].about;
                 break ;
             case (2):
-                content = JsonReader.information.game[MainSystem.category - 1].simulation;
+                content = JsonReader.information.game[MainSystem.category].simulation;
                 break ;
             case (3):
-                content = JsonReader.information.game[MainSystem.category - 1].calculation;
+                content = JsonReader.information.game[MainSystem.category].calculation;
                 break ;
         }
-        txt_title.text = JsonReader.information.game[MainSystem.category - 1].topic;
+        txt_title.text = JsonReader.information.game[MainSystem.category].topic;
         txt_content.text = content[page];
 
-        if (JsonReader.information.game[MainSystem.category - 1].about.Length > 1)
+        if (JsonReader.information.game[MainSystem.category].about.Length > 1)
             btn_next.SetActive(true);
     }
 }

@@ -9,7 +9,7 @@ public class SliderHandler : MonoBehaviour
     void Start()
     {
         _slider.onValueChanged.AddListener((v) => {
-            MainSystem.delta_time = v;
+            MainSystem.time_rate = v;
             MainSystem.delta_time_change = true;
         });
     }

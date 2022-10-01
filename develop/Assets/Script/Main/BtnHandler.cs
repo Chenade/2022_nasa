@@ -33,14 +33,14 @@ public class BtnHandler : MonoBehaviour
 
     public int mission;
     public GameObject Canva_Article;
-    public GameObject ArticleManager;
+    // public GameObject ArticleManager;
     public void selectMission()
     {
         MainSystem.mission = mission;
         Canva_minigame.SetActive(false);
         Canva_main.SetActive(false);
         Canva_Article.SetActive(true);
-        ArticleManager.SetActive(true);
+        // ArticleManager.SetActive(true);
         // game_start();
     }
 
@@ -52,6 +52,20 @@ public class BtnHandler : MonoBehaviour
     public void debug()
     {
         Debug.Log(Canva_minigame.activeInHierarchy);
+    }
+
+    public void earn_star()
+    {
+        MainSystem.category = Category;
+        switch (MainSystem.collected[Category])
+        {
+            case (0):
+                MainSystem.mission = 1;
+                Canva_minigame.SetActive(false);
+                Canva_main.SetActive(false);
+                Canva_Article.SetActive(true);
+                break ;
+        }
     }
 
 }

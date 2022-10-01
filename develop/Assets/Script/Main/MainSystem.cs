@@ -21,7 +21,7 @@ public class MainSystem : MonoBehaviour
     public static int target_star;
     public static GameObject moving_target = null;
 
-    public static float delta_time;
+    public static float time_rate;
     public static bool delta_time_change;
 
     public static int[ , ] status = { {2, 1, 1}, {2, 1, 1}, {2, 1, 1}, {2, 1, 0}, {2, 1, 0}, {2, 1, 0} };
@@ -29,10 +29,12 @@ public class MainSystem : MonoBehaviour
     // 1: unavailable
     // 2: available
 
+    public static int[] collected = {0, 0, 0, 0, 0, 0};
+
     void Awake()
     {
         category = 1;
-        delta_time = 0.5f;
+        time_rate = 0.5f;
         delta_time_change = false;
 
     }
