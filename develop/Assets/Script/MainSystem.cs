@@ -19,11 +19,16 @@ public class MainSystem : MonoBehaviour
 
     public static bool is_placing;
     public static int target_star;
+    public static GameObject moving_target = null;
+
+    public static float delta_time;
+    public static bool delta_time_change;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        delta_time = 0.5f;
+        delta_time_change = false;
     }
 
     // Update is called once per frame

@@ -18,16 +18,18 @@ public class MouseHandler : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (MainSystem.is_placing)
         {
-            if (MainSystem.is_placing)
+            if (!MainSystem.moving_target)
+                MainSystem.moving_target = GameObject.Instantiate(star_1);
+            mousePos = Input.mousePosition;
+            mousePos.z = Camera.main.nearClipPlane + 1;
+            worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+            MainSystem.moving_target.transform.position = worldPos;
+            if (Input.GetMouseButtonDown(0))
             {
-                mousePos = Input.mousePosition;
-                mousePos.z = Camera.main.nearClipPlane + 1;
-                worldPos = Camera.main.ScreenToWorldPoint(mousePos);
-                GameObject add_new = GameObject.Instantiate(star_1);
-                add_new.transform.position = worldPos;
                 MainSystem.is_placing = false;
+                MainSystem.moving_target = null;
             }
         }
 
