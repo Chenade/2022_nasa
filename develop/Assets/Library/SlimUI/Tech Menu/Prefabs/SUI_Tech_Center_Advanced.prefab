@@ -29399,7 +29399,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114417321767088670}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UIManagerTech, Assembly-CSharp
         m_MethodName: UIScaler
         m_Mode: 1
         m_Arguments:

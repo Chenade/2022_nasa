@@ -57,6 +57,7 @@ public class BtnHandler : MonoBehaviour
     public GameObject Canva_Article;
     public GameObject ArticleManager;
     public GameObject[] Canva_Simulator;
+    public GameObject Canva_Distance;
 
     public void earn_star()
     {
@@ -73,8 +74,13 @@ public class BtnHandler : MonoBehaviour
                 MainSystem.mission = 2;
                 Canva_minigame.SetActive(false);
                 Canva_main.SetActive(false);
-                // Canva_Article.SetActive(true);
                 Canva_Simulator[MainSystem.category].SetActive(true);
+                break ;
+            case (2):
+                MainSystem.mission = 3;
+                Canva_minigame.SetActive(false);
+                Canva_main.SetActive(false);
+                Canva_Distance.SetActive(true);
                 break ;
         }
     }

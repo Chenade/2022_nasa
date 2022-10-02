@@ -36,6 +36,7 @@ public class MainSystem : MonoBehaviour
         category = 1;
         time_rate = 0.5f;
         delta_time_change = false;
+        MainSystem.collected[0] = 2;
 
     }
 
