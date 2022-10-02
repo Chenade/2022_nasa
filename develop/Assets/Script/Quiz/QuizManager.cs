@@ -36,8 +36,9 @@ public class QuizManager : MonoBehaviour
         generateQuestion();
    }
 
-   public void retry()
+   public void return_Home()
    {
+        Debug.Log("end");
         Canva_Quiz.SetActive(false);
         Canva_main.SetActive(true);
    }

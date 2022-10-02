@@ -30,13 +30,16 @@ public class MainSystem : MonoBehaviour
     // 2: available
 
     public static int[] collected = {0, 0, 0, 0, 0, 0};
+    
+    public static int current_id;
+    public static bool is_mission;
 
     void Awake()
     {
         category = 1;
         time_rate = 0.5f;
         delta_time_change = false;
-        MainSystem.collected[0] = 2;
+        // MainSystem.collected[0] = 2;
 
     }
 

@@ -59,30 +59,14 @@ public class BtnHandler : MonoBehaviour
     public GameObject[] Canva_Simulator;
     public GameObject Canva_Distance;
 
-    public void earn_star()
+    public void earn_star(int id)
     {
-        MainSystem.category = Category;
-        switch (MainSystem.collected[Category])
-        {
-            case (0):
-                MainSystem.mission = 1;
-                Canva_minigame.SetActive(false);
-                Canva_main.SetActive(false);
-                Canva_Article.SetActive(true);
-                break ;
-            case (1):
-                MainSystem.mission = 2;
-                Canva_minigame.SetActive(false);
-                Canva_main.SetActive(false);
-                Canva_Simulator[MainSystem.category].SetActive(true);
-                break ;
-            case (2):
-                MainSystem.mission = 3;
-                Canva_minigame.SetActive(false);
-                Canva_main.SetActive(false);
-                Canva_Distance.SetActive(true);
-                break ;
-        }
+        MainSystem.is_mission = true;
+        MainSystem.current_id = id;
+        MainSystem.category = StarSystem.information[id].category;
+        StarSystem.Canvas_Main_static.SetActive(false);
+        StarSystem.Canvas_Minigame_static.SetActive(false);
+        StarSystem.information[id].target_canvas.SetActive(true);
     }
 
     public GameObject nightsky;

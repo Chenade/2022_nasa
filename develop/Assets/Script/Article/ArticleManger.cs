@@ -23,18 +23,7 @@ public class ArticleManger : MonoBehaviour
         btn_start.SetActive(false);
         page = 0;
 
-        switch (MainSystem.mission)
-        {
-            case (1):
-                content = JsonReader.information.game[MainSystem.category].about;
-                break ;
-            case (2):
-                content = JsonReader.information.game[MainSystem.category].simulation;
-                break ;
-            case (3):
-                content = JsonReader.information.game[MainSystem.category].calculation;
-                break ;
-        }
+        content = JsonReader.information.game[MainSystem.category].about;
         txt_title.text = JsonReader.information.game[MainSystem.category].topic;
         txt_content.text = content[page];
 

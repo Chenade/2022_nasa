@@ -34,6 +34,7 @@ public class ArticleBtn : MonoBehaviour
             btn_pre.SetActive(false);
     }
 
+    public GameObject Canvas_Main;
     public GameObject Canva_Article;
     public GameObject Canva_Quiz;
     public GameObject QuizManager;
@@ -44,12 +45,14 @@ public class ArticleBtn : MonoBehaviour
         btn_next.SetActive(false);
         btn_start.SetActive(false);
         Canva_Article.SetActive(false);
-        switch(MainSystem.mission)
+        if(MainSystem.is_mission)
         {
-            case (1):
-                Canva_Quiz.SetActive(true);
-                QuizManager.SetActive(true);
-                break ;
+            Canva_Quiz.SetActive(true);
+            QuizManager.SetActive(true);
+        }
+        else
+        {
+            Canvas_Main.SetActive(true);
         }
     }
 }
