@@ -80,6 +80,61 @@
       "calculation": "To know how far away a Cepheid variable is we must compare its apparent magnitude with its absolute magnitude. We can find the absolute magnitude with the variable's period because they are correlated. The difference between the apparent magnitude and the absolute magnitude yields the distance"
     },
     {
+      "topic": "Cataclysmic Variables",
+      "about": [
+        "A Cataclysmic Variable (CV) is a type of star system that irregularly has bursts of increased brightness. It is a binary system made up of two stars: The primary white dwarf star, and the companion star. The stars are so close together (the whole system being about the size of the earth and the moon), that the white dwarf accretes matter from the companion. Normally the accretion of matter forms what is called an accretion disc (see image below).",
+        "The irregular bursts of increased brightness are caused by nova outbursts. The classical nova outburst happens when the matter from the accretion disc builds up on the surface of the hot white dwarf and reaches a temperature that causes a runaway hydrogen fusion reaction. This causes a very bright outburst.",
+        "Another type of outburst, called the dwarf nova, is caused by instability in the accretion disc. When the gas reaches a critical temperature, it changes the viscosity of the disc which results in an increase in the rate of accretion into the white dwarf, temporarily heating the whole disc. Dwarf nova are less bright than classical nova but happen more frequently. Under certain circumstances the white dwarf can supernova which causes a very bright outburst."
+      ],
+      "quiz": [
+        {
+          "question": "A classical nova outburst is",
+          "answers": [
+            "The same as a supernova explosion",
+            "Nuclear fusion on the white dwarf surface",
+            "The death of one of the stars in the system",
+            ""
+          ],
+          "correct": 2,
+          "is_selected": false
+        },
+        {
+          "question": "What causes dwarf nova outbursts in binary systems?",
+          "answers": [
+            "A rotating neutron star",
+            "Temporary increases in the rate of accretion onto the white dwarf",
+            "Temporary increases in the rate of accretion from the white dwarf onto the Sun-like star",
+            ""
+          ],
+          "correct": 2,
+          "is_selected": false
+        },
+        {
+          "question": "In magnetic CVs, accretion is closer to vertical along the magnetic field lines, rather than remaining an accretion disk. Which of the following is true about magnetic CVs?",
+          "answers": [
+            "They generally emit X-rays more strongly than non-magnetic CVs",
+            "They often have magnetic fields many millions of times stronger than that of the Earth",
+            "They contain accretion 'columns' and 'curtains'",
+            "All of the above"
+          ],
+          "correct": 4,
+          "is_selected": false
+        },
+        {
+          "question": "What are super-soft sources?",
+          "answers": [
+            "X-ray emitting objects that are very flexible and often change shape",
+            "Celestial sources of low energy (< 0.5 keV) X-rays, probably nuclear-burning white dwarfs",
+            "Cataclysmic variables that were created by a supernova explosion",
+            ""
+          ],
+          "correct": 2,
+          "is_selected": false
+        }
+      ],
+      "simulation": ["Cataclysmic are composed of two stars, a white dwarf and a companion star. The dwars accretes material from the companion star forming an accretion disc in the process", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"]
+    },
+    {
       "topic": "Supernova",
       "about": [
         "One type of supernova is caused by the end of life of a dying massive star. This happens when a star at least 8 times the mass of our sun goes out with an explosion. A star is in balance between two opposite forces. The star’s gravity tries to squeeze the star into the smallest, tightest ball possible. But the nuclear fuel burning in the star’s core creates strong outward pressure. This outward push resists the inward squeeze of gravity.",
@@ -143,98 +198,10 @@
           ],
           "correct": "0",
           "is_selected": false
-        },
-        {
-          "question": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correct": "",
-          "is_selected": false
         }
       ],
       "simulation": ["Type 1a supernova is quite an explosive event! It happens when a white dwarf star reaches its mass limit and it collapses into itself.", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"],
       "calculation": ["Type 1a supernova always reach the same peak brightness so we already know the absolute magnitude. All we have to do is observe the apparent magnitude and calculate the difference to get the distance from earth"]
-    },
-    {
-      "topic": "Cataclysmic Variables",
-      "about": [
-        "A Cataclysmic Variable (CV) is a type of star system that irregularly has bursts of increased brightness. It is a binary system made up of two stars: The primary white dwarf star, and the companion star. The stars are so close together (the whole system being about the size of the earth and the moon), that the white dwarf accretes matter from the companion. Normally the accretion of matter forms what is called an accretion disc (see image below).",
-        "The irregular bursts of increased brightness are caused by nova outbursts. The classical nova outburst happens when the matter from the accretion disc builds up on the surface of the hot white dwarf and reaches a temperature that causes a runaway hydrogen fusion reaction. This causes a very bright outburst.",
-        "Another type of outburst, called the dwarf nova, is caused by instability in the accretion disc. When the gas reaches a critical temperature, it changes the viscosity of the disc which results in an increase in the rate of accretion into the white dwarf, temporarily heating the whole disc. Dwarf nova are less bright than classical nova but happen more frequently. Under certain circumstances the white dwarf can supernova which causes a very bright outburst."
-      ],
-      "quiz": [
-        {
-          "question": "A classical nova outburst is",
-          "answers": [
-            "The same as a supernova explosion",
-            "Nuclear fusion on the white dwarf surface",
-            "The death of one of the stars in the system",
-            ""
-          ],
-          "correct": 2,
-          "is_selected": false
-        },
-        {
-          "question": "What causes dwarf nova outbursts in binary systems?",
-          "answers": [
-            "A rotating neutron star",
-            "Temporary increases in the rate of accretion onto the white dwarf",
-            "Temporary increases in the rate of accretion from the white dwarf onto the Sun-like star",
-            ""
-          ],
-          "correct": 2,
-          "is_selected": false
-        },
-        {
-          "question": "In magnetic CVs, accretion is closer to vertical along the magnetic field lines, rather than remaining an accretion disk. Which of the following is true about magnetic CVs?",
-          "answers": [
-            "They generally emit X-rays more strongly than non-magnetic CVs",
-            "They often have magnetic fields many millions of times stronger than that of the Earth",
-            "They contain accretion 'columns' and 'curtains'",
-            "All of the above"
-          ],
-          "correct": 4,
-          "is_selected": false
-        },
-        {
-          "question": "What are super-soft sources?",
-          "answers": [
-            "X-ray emitting objects that are very flexible and often change shape",
-            "Celestial sources of low energy (< 0.5 keV) X-rays, probably nuclear-burning white dwarfs",
-            "Cataclysmic variables that were created by a supernova explosion",
-            ""
-          ],
-          "correct": 2,
-          "is_selected": false
-        },
-        {
-          "question": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correct": "",
-          "is_selected": false
-        },
-        {
-          "question": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correct": "",
-          "is_selected": false
-        }
-      ],
-      "simulation": ["Cataclysmic are composed of two stars, a white dwarf and a companion star. The dwars accretes material from the companion star forming an accretion disc in the process", "Pay attention to how the light curve corresponds to the variable star system as it oscillates"]
     },
     {
       "topic": "Eclipsing Binary system",
@@ -328,7 +295,7 @@
             "change in magnetic field",
             "composition"
           ],
-          "correct": "1",
+          "correct": 2,
           "is_selected": false
         },
         {
@@ -339,7 +306,7 @@
             "close binaries whose orbital plane lines up with the line of sight",
             ""
           ],
-          "correct": "2",
+          "correct": 3,
           "is_selected": false
         },
         {
@@ -350,7 +317,7 @@
             "physical properties of the stars",
             "luminosity of at least one of the stars"
           ],
-          "correct": "1",
+          "correct": 2,
           "is_selected": false
         },
         {
@@ -361,7 +328,7 @@
             "rapid rotation",
             "non-uniform density"
           ],
-          "correct": "0",
+          "correct": 1,
           "is_selected": false
         },
         {
@@ -372,18 +339,7 @@
             "the more massive secondary component",
             "common gaseous envelopes"
           ],
-          "correct": "",
-          "is_selected": false
-        },
-        {
-          "question": "",
-          "answers": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "correct": "",
+          "correct": 1,
           "is_selected": false
         }
       ],

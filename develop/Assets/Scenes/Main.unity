@@ -692,6 +692,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &32389710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1924,10 +1927,10 @@ RectTransform:
   m_Father: {fileID: 582490885}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 201, y: 130.85}
-  m_SizeDelta: {x: -462.4745, y: -326.7933}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 203, y: 175.6532}
+  m_SizeDelta: {x: 397.5255, y: 115.9002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86499915
 MonoBehaviour:
@@ -2848,6 +2851,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &181908852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4468,6 +4474,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &300461308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4755,8 +4764,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: 0}
-  m_SizeDelta: {x: 244, y: 80.68701}
+  m_AnchoredPosition: {x: 121, y: 0}
+  m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &304079622
 MonoBehaviour:
@@ -4779,6 +4788,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 0}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 304079623}
+  on: {fileID: 21300000, guid: a3ad6bb50da9c064a8b0bffc079f4a9a, type: 3}
+  off: {fileID: 21300000, guid: 37ebebf7bbd15994583114600f01b36f, type: 3}
 --- !u!114 &304079623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4855,7 +4867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: af61b345092f5db47a7707a72e78e0b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37ebebf7bbd15994583114600f01b36f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5149,10 +5161,10 @@ RectTransform:
   m_Father: {fileID: 582490885}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -93.44348, y: 65.148056}
-  m_SizeDelta: {x: 134.2714, y: 61.626}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 334.63, y: -174}
+  m_SizeDelta: {x: 134.2714, y: 61.626007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &342209294
 MonoBehaviour:
@@ -6625,10 +6637,10 @@ RectTransform:
   m_Father: {fileID: 582490885}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -199, y: 97}
-  m_SizeDelta: {x: -493.4362, y: -251.2929}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -225, y: 127}
+  m_SizeDelta: {x: 319.877, y: 209.9672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &409626365
 MonoBehaviour:
@@ -6876,12 +6888,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet
-    rutrum ipsum. Donec sed nisl sed eros fringilla mollis a a dolor. In id velit
-    vel libero aliquam porttitor sit amet ut dui. Sed sed condimentum eros
+  m_text: "Here we have a binary star system comprising of a white dwarf and a\_normal
+    star companion. The companion star loses material onto the white dwarf via accretion.
+    As the dwarf\u2019s mass approaches the Chandrasekhar limit of\_1.4 solar masses,
+    pressure builds and the internal temperature rises enough for carbon fusion to
+    begin. Since the majority of white dwarfs are composed mostly of carbon, all
+    the carbon undergoes fusion instantly. The result is a white dwarf supernova."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
-  m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6905,8 +6920,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 14
-  m_fontSizeBase: 14
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6941,7 +6956,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 25.79535, y: 0, z: 33.533936, w: 0}
+  m_margin: {x: 16.338104, y: 0, z: 9.890747, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7425,7 +7440,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 5, y: 4.9999924}
+  m_AnchoredPosition: {x: 5, y: 5}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &466110646
@@ -7742,8 +7757,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -231, y: -153.30081}
-  m_SizeDelta: {x: 392.8582, y: 256.9313}
+  m_AnchoredPosition: {x: -878.01, y: -86.331}
+  m_SizeDelta: {x: 1054.4, y: 77.227}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &485326372
 MonoBehaviour:
@@ -7758,14 +7773,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 723624f7e48590b48835ee6a92fca85e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a134ca612254ce4d922b593b0dea3d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7951,6 +7966,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &507047553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8079,7 +8097,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -4.9999847, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &525512413
@@ -8316,6 +8334,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 0}
   nightsky: {fileID: 0}
   nightsky_empty: {fileID: 0}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &566487958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8589,7 +8610,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578324889}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -8602,8 +8623,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Light up your night sky by collecting a series of ever-changing variable
-    stars. Open your dashboard to start!
+  m_text: '"Light up your night sky by collecting a series of ever-changing variable
+    stars. Open your dashboard to start!"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -9158,6 +9179,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &596685011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10140,7 +10164,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 108, y: 42}
+  m_AnchoredPosition: {x: 108, y: 67}
   m_SizeDelta: {x: 132.66077, y: 61.626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681426561
@@ -11832,7 +11856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &778254733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13319,7 +13343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5, y: -4.9999924}
+  m_AnchoredPosition: {x: -5, y: -5}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890562990
@@ -15202,6 +15226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1045907510}
   - component: {fileID: 1045907511}
+  - component: {fileID: 1045907512}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -15229,8 +15254,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 83.973145, y: 37}
-  m_SizeDelta: {x: -247.499, y: 20}
+  m_AnchoredPosition: {x: 69.365, y: 37.773}
+  m_SizeDelta: {x: -218.283, y: 48.547}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045907511
 MonoBehaviour:
@@ -15276,13 +15301,26 @@ MonoBehaviour:
   m_FillRect: {fileID: 1170550117}
   m_HandleRect: {fileID: 1773735720}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: 0.5
+  m_MaxValue: 25
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 14.17
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1045907512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045907509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c1fa7036ebb8c4cba86ef10881ae1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _slider: {fileID: 1045907511}
 --- !u!1 &1059833043
 GameObject:
   m_ObjectHideFlags: 0
@@ -15698,6 +15736,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1099324351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16086,6 +16127,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1135738755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16611,6 +16655,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1144698140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16933,7 +16980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1179744819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17319,8 +17366,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 243, y: -81}
-  m_SizeDelta: {x: 393.8108, y: 100}
+  m_AnchoredPosition: {x: 257.39, y: -86.331}
+  m_SizeDelta: {x: 514.79, y: 172.661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211193754
 MonoBehaviour:
@@ -17335,14 +17382,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 1ef687351d9a0d8489f3d3128ddae484, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17771,7 +17818,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -4.9999924}
+  m_AnchoredPosition: {x: 5, y: -5}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1246442544
@@ -17941,7 +17988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -5, y: 4.9999924}
+  m_AnchoredPosition: {x: -5, y: 5}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264596819
@@ -18567,7 +18614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6de5e11c36cc0fb439968efe9ed7a5f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68a42d4ccccb1d144bec3e50531bac91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19126,6 +19173,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1359487444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19352,7 +19402,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -5.5062256, y: 7.3325577}
+  m_AnchoredPosition: {x: -5.5062256, y: 7.33255}
   m_SizeDelta: {x: 11.012482, y: 14.665085}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366859819
@@ -19566,10 +19616,10 @@ RectTransform:
   m_Father: {fileID: 824957659}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -164.53806, y: 39.518265}
-  m_SizeDelta: {x: -409.1942, y: -109.5127}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 301.92267, y: 37}
+  m_SizeDelta: {x: 418.2328, y: 357.9389}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376423015
 MonoBehaviour:
@@ -19644,7 +19694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 66, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1377168536
@@ -20033,7 +20083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -82.24463, y: 47}
+  m_AnchoredPosition: {x: -82.24463, y: 58}
   m_SizeDelta: {x: 132.6608, y: 61.626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1387221657
@@ -20166,8 +20216,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000038146973, y: 1}
+  m_SizeDelta: {x: -0.000030518, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388264283
 MonoBehaviour:
@@ -20189,7 +20239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Finish
+  m_text: Accrete
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
@@ -21143,9 +21193,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 101, y: 36.99951}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80, y: 0}
+  m_SizeDelta: {x: 160, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1480299601
 MonoBehaviour:
@@ -21395,6 +21445,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1511247934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22035,6 +22088,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1549496389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22495,7 +22551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Congratlation! You Pass the Quiz!
+  m_text: 'Congratulations! You Passed the Quiz!
 
     Find the star in the sky '
   m_isRightToLeft: 0
@@ -22823,6 +22879,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1602069180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23344,10 +23403,10 @@ RectTransform:
   m_Father: {fileID: 582490885}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -199, y: -93}
-  m_SizeDelta: {x: -493.44, y: -254.67}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -225, y: -116}
+  m_SizeDelta: {x: 320.7487, y: 206.4917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614712555
 MonoBehaviour:
@@ -23896,7 +23955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 4.599243, y: -4.961006}
+  m_AnchoredPosition: {x: 4.599243, y: -4.9609985}
   m_SizeDelta: {x: 9.198517, y: 9.921982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656642343
@@ -24171,6 +24230,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 0}
   nightsky: {fileID: 0}
   nightsky_empty: {fileID: 0}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!1 &1674486390
 GameObject:
   m_ObjectHideFlags: 0
@@ -24479,7 +24541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 4.599243, y: 4.961006}
+  m_AnchoredPosition: {x: 4.599243, y: 4.9609985}
   m_SizeDelta: {x: 9.198517, y: 9.921982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677931877
@@ -25415,6 +25477,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &1713885602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25679,10 +25744,10 @@ RectTransform:
   m_Father: {fileID: 582490885}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 95.26648, y: -148.85196}
-  m_SizeDelta: {x: -524.2344, y: -366.3738}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 109.69647, y: -181.22}
+  m_SizeDelta: {x: 308.8518, y: 76.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1722968305
 MonoBehaviour:
@@ -26339,7 +26404,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 0}
+  m_SizeDelta: {x: 52.138, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1773735721
 MonoBehaviour:
@@ -26749,8 +26814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9.7181, y: 5.5267}
-  m_SizeDelta: {x: -95.8175, y: -78.216}
+  m_AnchoredPosition: {x: 12.638, y: 10.3932}
+  m_SizeDelta: {x: -101.6573, y: -87.9489}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791481567
 MonoBehaviour:
@@ -26976,7 +27041,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 10.531586, y: 46.99997}
+  m_AnchoredPosition: {x: 18, y: 67}
   m_SizeDelta: {x: -352.4662, y: 61.626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809253121
@@ -27262,7 +27327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dwart Nova
+  m_text: Dwarf Nova
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
   m_sharedMaterial: {fileID: 21725345230478544, guid: c9b5356971579494b9b27f0122ce83d1, type: 2}
@@ -28810,6 +28875,9 @@ MonoBehaviour:
   Canva_Distance: {fileID: 169698506}
   nightsky: {fileID: 1304330656}
   nightsky_empty: {fileID: 15985510}
+  btn: {fileID: 0}
+  on: {fileID: 0}
+  off: {fileID: 0}
 --- !u!114 &2050689115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29228,7 +29296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.599243, y: -4.961006}
+  m_AnchoredPosition: {x: -4.599243, y: -4.9609985}
   m_SizeDelta: {x: 9.198517, y: 9.921982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2071806208

@@ -27,7 +27,7 @@ public class twinkling : MonoBehaviour
         if (intensity <= 0f)
             delta = 1;
 
-        intensity += (step * delta) ;
+        intensity += ((step * MainSystem.time_rate) * delta) ;
         _light.intensity = intensity;
 
     }

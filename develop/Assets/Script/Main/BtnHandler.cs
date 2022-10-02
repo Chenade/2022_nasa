@@ -72,17 +72,23 @@ public class BtnHandler : MonoBehaviour
 
     public GameObject nightsky;
     public GameObject nightsky_empty;
+    public Button btn;
+    public Sprite on;
+    public Sprite off;
     public void switch_view()
     {
         if (nightsky.activeInHierarchy)
         {
             nightsky.SetActive(false);
             nightsky_empty.SetActive(true);
+            btn.image.overrideSprite = off;
         }
         else
         {
             nightsky.SetActive(true);
             nightsky_empty.SetActive(false);
+            btn.image.overrideSprite = on;
+
         }
     }
 
