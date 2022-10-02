@@ -1,19 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class sim_supernova : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public GameObject finish;
+    public GameObject a_big;
+    public GameObject a_small;
+    public Slider _slider;
+
+    float scale_delta = 1.7f;
+    float scale_delta2 = 3f;
+    public void btn_Burst()
     {
-        
+        _slider.value += 5;
+        if(_slider.value == 100f)
+            finish.SetActive(true);
+
+        scale_delta += 0.02f;
+        scale_delta2 -= 0.02f;
+        a_small.transform.localScale = new Vector3(scale_delta, scale_delta, scale_delta);
+        a_big.transform.localScale = new Vector3(scale_delta2, scale_delta2, scale_delta2);
+        // a_big.transform.Scale(a_big.transform.Scale - scale_delta);
     }
 
     public GameObject Canva_main;
@@ -21,8 +31,9 @@ public class sim_supernova : MonoBehaviour
 
     public void Submit()
     {
-        MainSystem.collected[MainSystem.category] += 1;
-        MainSystem.mission = 3;
+         MainSystem.mission = 3;
+        MainSystem.is_mission = false;
+        StarSystem.information[MainSystem.current_id].target_star.SetActive(true);
         Canva_sim.SetActive(false);
         Canva_main.SetActive(true);
     }

@@ -58,6 +58,7 @@ public class BtnHandler : MonoBehaviour
     public GameObject ArticleManager;
     public GameObject[] Canva_Simulator;
     public GameObject Canva_Distance;
+    private int count = 0;
 
     public void earn_star(int id)
     {

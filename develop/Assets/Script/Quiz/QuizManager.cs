@@ -54,9 +54,9 @@ public class QuizManager : MonoBehaviour
         ScoreTxt.text = score + "/ 3";
         if (score == 3)
         {
-            // MainSystem.status[MainSystem.category,1] = 2;
-            MainSystem.collected[MainSystem.category] += 1;
             MainSystem.mission = 2;
+            MainSystem.is_mission = false;
+            StarSystem.information[MainSystem.current_id].target_star.SetActive(true);
             text_failed.SetActive(false);
             text_pass.SetActive(true);
         }
