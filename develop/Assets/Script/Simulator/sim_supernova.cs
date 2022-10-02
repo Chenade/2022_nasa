@@ -15,4 +15,15 @@ public class sim_supernova : MonoBehaviour
     {
         
     }
+
+    public GameObject Canva_main;
+    public GameObject Canva_sim;
+
+    public void Submit()
+    {
+        MainSystem.collected[MainSystem.category] += 1;
+        MainSystem.mission = 3;
+        Canva_sim.SetActive(false);
+        Canva_main.SetActive(true);
+    }
 }
