@@ -17,17 +17,26 @@ public class twinkling : MonoBehaviour
         intensity = 1f;
         _light.intensity = intensity;
         timestamp = 0f;
+        intensity = JSONStar.information.data[0].curve[0].y;
     }
 
     void FixedUpdate()
     {
         timestamp += MainSystem.time_rate * Time.deltaTime;
-        if (intensity >= 1f)
-            delta = -1;
-        if (intensity <= 0f)
-            delta = 1;
 
-        intensity += ((step * MainSystem.time_rate) * delta) ;
+        for(int i = 0; i < JSONStar.information.data[0].curve.Length; i ++)
+        {
+            if (Mathf.Abs(timestamp - JSONStar.information.data[0].curve[i].x) < 0.5f)
+            {
+                intensity = JSONStar.information.data[0].curve[i].y;
+                break ;
+            }
+        }
+        if (timestamp > JSONStar.information.data[0].curve[JSONStar.information.data[0].curve.Length - 1].x)
+        {
+            timestamp = 0;
+            intensity = JSONStar.information.data[0].curve[0].y;
+        }
         _light.intensity = intensity;
 
     }
