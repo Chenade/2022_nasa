@@ -110,17 +110,6 @@
           "is_selected": false
         },
         {
-          "question": "In magnetic CVs, accretion is closer to vertical along the magnetic field lines, rather than remaining an accretion disk. Which of the following is true about magnetic CVs?",
-          "answers": [
-            "They generally emit X-rays more strongly than non-magnetic CVs",
-            "They often have magnetic fields many millions of times stronger than that of the Earth",
-            "They contain accretion 'columns' and 'curtains'",
-            "All of the above"
-          ],
-          "correct": 4,
-          "is_selected": false
-        },
-        {
           "question": "What are super-soft sources?",
           "answers": [
             "X-ray emitting objects that are very flexible and often change shape",
@@ -152,7 +141,7 @@
             "8 times more",
             "15 times more"
           ],
-          "correct": "2",
+          "correct": 3,
           "is_selected": false
         },
         {
@@ -163,7 +152,7 @@
             "hotter and more dense",
             "hotter and less dense"
           ],
-          "correct": "2",
+          "correct": 3,
           "is_selected": false
         },
         {
@@ -174,7 +163,7 @@
             "Tantrum",
             ""
           ],
-          "correct": "1",
+          "correct": 2,
           "is_selected": false
         },
         {
@@ -185,7 +174,7 @@
             "Pressure created by nuclear fuel burning in the stars core and the centripetal force coming from its spin",
             ""
           ],
-          "correct": "0",
+          "correct": 1,
           "is_selected": false
         },
         {
@@ -196,7 +185,7 @@
             "Swan Leavitt limit of 1.5 solar masses",
             "Yoël limit"
           ],
-          "correct": "0",
+          "correct": 1,
           "is_selected": false
         }
       ],

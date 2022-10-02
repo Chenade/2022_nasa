@@ -19,7 +19,7 @@ public class sim_ceiphed : MonoBehaviour
     public GameObject finish;
 
     public Image[] d = new Image[10];
-    void Start()
+    void OnEnable()
     {
         _pp = Sphere.GetComponent<PostProcessVolume>();
         _pp.profile.TryGetSettings(out _bloom);
@@ -72,6 +72,9 @@ public class sim_ceiphed : MonoBehaviour
 
     public void Submit()
     {
+        for (int i = 0 ; i < 10; i ++)
+            if(d[i]) Destroy(d[i]);
+        StarSystem.level_pass();
         MainSystem.mission = 3;
         MainSystem.is_mission = false;
         StarSystem.information[MainSystem.current_id].target_star.SetActive(true);

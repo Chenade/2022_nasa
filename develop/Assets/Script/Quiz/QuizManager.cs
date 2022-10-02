@@ -57,6 +57,7 @@ public class QuizManager : MonoBehaviour
             MainSystem.mission = 2;
             MainSystem.is_mission = false;
             StarSystem.information[MainSystem.current_id].target_star.SetActive(true);
+            StarSystem.level_pass();
             text_failed.SetActive(false);
             text_pass.SetActive(true);
         }
@@ -104,8 +105,8 @@ public class QuizManager : MonoBehaviour
         if(count < 3)
         {
             currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
-            while (JsonReader.section.quiz[currentQuestion].is_selected)
-                currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
+            // while (JsonReader.section.quiz[currentQuestion].is_selected)
+            //     currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
             JsonReader.section.quiz[currentQuestion].is_selected = true;
             QuestionTxt.text = JsonReader.section.quiz[currentQuestion].question;
             AnsTxt.text = JsonReader.section.quiz[currentQuestion].correct.ToString();
