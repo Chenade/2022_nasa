@@ -9,8 +9,8 @@ public class JSONStar : MonoBehaviour
     [System.Serializable]
     public class cood
     {
-        public int x;
-        public int y;
+        public float x;
+        public float y;
     }
 
     [System.Serializable]

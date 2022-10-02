@@ -37,7 +37,7 @@ public class MainSystem : MonoBehaviour
     void Awake()
     {
         category = 1;
-        time_rate = 0.5f;
+        time_rate = 5f;
         delta_time_change = false;
         // MainSystem.collected[0] = 2;
 

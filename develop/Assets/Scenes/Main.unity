@@ -663,7 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.11372549}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.3254902}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1228,7 +1228,7 @@ Transform:
   m_GameObject: {fileID: 44419103}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 493544599}
@@ -1435,7 +1435,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1512,7 +1512,7 @@ Transform:
   m_GameObject: {fileID: 55045855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 280254535}
@@ -2124,7 +2124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &100215031
 Transform:
   m_ObjectHideFlags: 0
@@ -2159,6 +2159,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 3
   timestamp: 0
 --- !u!1 &115929358
 GameObject:
@@ -2176,7 +2177,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &115929359
 Transform:
   m_ObjectHideFlags: 0
@@ -2211,6 +2212,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 17
   timestamp: 0
 --- !u!1 &127610020
 GameObject:
@@ -2550,7 +2552,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2838,7 +2840,7 @@ Transform:
   m_GameObject: {fileID: 161296476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 497466543}
@@ -3344,7 +3346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &213076078
 Transform:
   m_ObjectHideFlags: 0
@@ -3379,6 +3381,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 8
   timestamp: 0
 --- !u!1 &221070735
 GameObject:
@@ -4541,7 +4544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &280254535
 Transform:
   m_ObjectHideFlags: 0
@@ -4576,6 +4579,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 16
   timestamp: 0
 --- !u!1 &289782330
 GameObject:
@@ -4605,7 +4609,7 @@ Transform:
   m_GameObject: {fileID: 289782330}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 100215031}
@@ -5329,7 +5333,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5408,7 +5412,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5505,6 +5509,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.1
+  star_id: 1
   timestamp: 0
 --- !u!4 &338757810
 Transform:
@@ -6020,7 +6025,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &376356851
 Transform:
   m_ObjectHideFlags: 0
@@ -6055,6 +6060,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 9
   timestamp: 0
 --- !u!1 &378695830
 GameObject:
@@ -6952,7 +6958,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8201,12 +8207,12 @@ GameObject:
   - component: {fileID: 470937128}
   - component: {fileID: 470937129}
   m_Layer: 0
-  m_Name: sn - SN 1972E
+  m_Name: sn - SN 2020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &470937128
 Transform:
   m_ObjectHideFlags: 0
@@ -8241,6 +8247,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 10
   timestamp: 0
 --- !u!1 &472334702
 GameObject:
@@ -8287,7 +8294,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8381,7 +8388,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8523,7 +8530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &493544598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8540,6 +8547,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 7
   timestamp: 0
 --- !u!4 &493544599
 Transform:
@@ -8575,7 +8583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &497466543
 Transform:
   m_ObjectHideFlags: 0
@@ -8610,6 +8618,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 6
   timestamp: 0
 --- !u!1 &507047550
 GameObject:
@@ -9891,7 +9900,7 @@ Transform:
   m_GameObject: {fileID: 594605791}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1651431645}
@@ -10323,7 +10332,7 @@ Transform:
   m_GameObject: {fileID: 606778713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 376356851}
@@ -10499,7 +10508,7 @@ Transform:
   m_GameObject: {fileID: 623147647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1559471497}
@@ -11636,7 +11645,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -11873,7 +11882,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &743041176
 Transform:
   m_ObjectHideFlags: 0
@@ -11908,6 +11917,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 15
   timestamp: 0
 --- !u!1 &743106637
 GameObject:
@@ -13330,7 +13340,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -13511,7 +13521,7 @@ Transform:
   m_GameObject: {fileID: 830847610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2113378853}
@@ -13799,7 +13809,7 @@ Transform:
   m_GameObject: {fileID: 866763488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1926121484}
@@ -14508,7 +14518,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -14855,7 +14865,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -14932,7 +14942,7 @@ Transform:
   m_GameObject: {fileID: 926653764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 470937128}
@@ -15029,7 +15039,7 @@ Transform:
   m_GameObject: {fileID: 927787377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1679742567}
@@ -16067,7 +16077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1017308257
 Transform:
   m_ObjectHideFlags: 0
@@ -16102,6 +16112,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 18
   timestamp: 0
 --- !u!1 &1023771951
 GameObject:
@@ -16228,7 +16239,7 @@ Transform:
   m_GameObject: {fileID: 1036342387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1398882760}
@@ -16461,7 +16472,7 @@ MonoBehaviour:
   m_MinValue: 0.5
   m_MaxValue: 25
   m_WholeNumbers: 0
-  m_Value: 14.17
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17398,7 +17409,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1132938535
 Transform:
   m_ObjectHideFlags: 0
@@ -17433,6 +17444,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 11
   timestamp: 0
 --- !u!1 &1135738752
 GameObject:
@@ -17623,7 +17635,7 @@ Transform:
   m_GameObject: {fileID: 1141456701}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 338757810}
@@ -18362,7 +18374,7 @@ Transform:
   m_GameObject: {fileID: 1202462529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1875351767}
@@ -18552,8 +18564,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Intensity: 4
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -18879,7 +18891,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -19193,7 +19205,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -20100,7 +20112,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -20721,7 +20733,7 @@ Transform:
   m_GameObject: {fileID: 1362625665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1132938535}
@@ -21772,6 +21784,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.05
+  star_id: 1
   timestamp: 0
 --- !u!4 &1398882760
 Transform:
@@ -22882,7 +22895,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -23340,7 +23353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1559471497
 Transform:
   m_ObjectHideFlags: 0
@@ -23375,6 +23388,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 5
   timestamp: 0
 --- !u!1 &1559847311
 GameObject:
@@ -24008,7 +24022,7 @@ Transform:
   m_GameObject: {fileID: 1588911495}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1017308257}
@@ -25315,7 +25329,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1651431645
 Transform:
   m_ObjectHideFlags: 0
@@ -25350,6 +25364,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 4
   timestamp: 0
 --- !u!1 &1656642341
 GameObject:
@@ -26105,7 +26120,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1679742567
 Transform:
   m_ObjectHideFlags: 0
@@ -26140,6 +26155,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 12
   timestamp: 0
 --- !u!1 &1687775622
 GameObject:
@@ -26441,7 +26457,7 @@ Transform:
   m_GameObject: {fileID: 1704612704}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 115929359}
@@ -27111,7 +27127,7 @@ Transform:
   m_GameObject: {fileID: 1729787597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1912388196}
@@ -28024,7 +28040,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -28443,7 +28459,7 @@ Transform:
   m_GameObject: {fileID: 1835537589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 743041176}
@@ -28831,7 +28847,7 @@ Transform:
   m_GameObject: {fileID: 1868372033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 213076078}
@@ -28993,7 +29009,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1875351767
 Transform:
   m_ObjectHideFlags: 0
@@ -29028,6 +29044,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 13
   timestamp: 0
 --- !u!1 &1876187492
 GameObject:
@@ -29257,7 +29274,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1912388196
 Transform:
   m_ObjectHideFlags: 0
@@ -29292,6 +29309,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 14
   timestamp: 0
 --- !u!1 &1917302047
 GameObject:
@@ -29445,7 +29463,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1926121484
 Transform:
   m_ObjectHideFlags: 0
@@ -29480,6 +29498,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 1
   timestamp: 0
 --- !u!135 &1926121487
 SphereCollider:
@@ -30587,7 +30606,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -30907,7 +30926,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -31048,7 +31067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2113378853
 Transform:
   m_ObjectHideFlags: 0
@@ -31083,6 +31102,7 @@ MonoBehaviour:
   intensity: 1
   delta: -1
   step: 0.01
+  star_id: 0
   timestamp: 0
 --- !u!1 &2115693526
 GameObject:
@@ -31205,7 +31225,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.8
-  m_Range: 0.14171503
+  m_Range: 0.3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
