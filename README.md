@@ -10,6 +10,7 @@
   - clone the project under the root of web server
   - open the brower to the web server
 
+---
 
 - Registration
   - https://2022.spaceappschallenge.org/locations/taipei
