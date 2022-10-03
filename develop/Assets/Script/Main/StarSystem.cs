@@ -86,11 +86,11 @@ public class StarSystem : MonoBehaviour
             case (17):
                 break ;
             default :
-                information[MainSystem.current_id].btn.image.overrideSprite = information[MainSystem.current_id].enabled;
                 information[MainSystem.current_id + 1].btn.image.overrideSprite = information[MainSystem.current_id + 1].disabled;
                 information[MainSystem.current_id + 1].btn.interactable = true;
                 break ;
         }
+        information[MainSystem.current_id].btn.image.overrideSprite = information[MainSystem.current_id].enabled;
         Transform starName = information[MainSystem.current_id].target_star.transform.Find("StarName");
         if (starName)
             starName.GetComponent<TextMeshPro>().text = information[MainSystem.current_id].name;

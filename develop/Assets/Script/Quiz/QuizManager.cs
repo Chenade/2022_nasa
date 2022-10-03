@@ -23,16 +23,21 @@ public class QuizManager : MonoBehaviour
    public int score;
    
    private int currentQuestion;
+   private int index;
    private int count = 0;
+   List<int> quest;
    
    public void OnEnable()
    {
         Debug.Log("Quiz start!");
+        quest = new List<int>();
         score = 0;
         count = 0;
         GoPanel.SetActive(false);
         Quizpanel.SetActive(true);
         JsonReader.section = JsonReader.information.game[MainSystem.category];
+        for(int i = 0; i < JsonReader.section.quiz.Length; i ++)
+            quest.Add(i);
         generateQuestion();
    }
 
@@ -71,11 +76,15 @@ public class QuizManager : MonoBehaviour
     public void correct()
     {
         score += 1;
+        if (quest.Count - 1 > index)
+            quest.RemoveAt(index);
         StartCoroutine(waitForNext());
     }
 
     public void wrong()
     {
+        if (quest.Count - 1 > index)
+            quest.RemoveAt(index);
         StartCoroutine(waitForNext());
     }
 
@@ -104,9 +113,8 @@ public class QuizManager : MonoBehaviour
    {
         if(count < 3)
         {
-            currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
-            // while (JsonReader.section.quiz[currentQuestion].is_selected)
-            //     currentQuestion = Random.Range(0, JsonReader.section.quiz.Length);
+            index = Random.Range(0, quest.Count - 1);
+            currentQuestion = quest[index];
             JsonReader.section.quiz[currentQuestion].is_selected = true;
             QuestionTxt.text = JsonReader.section.quiz[currentQuestion].question;
             AnsTxt.text = JsonReader.section.quiz[currentQuestion].correct.ToString();
@@ -115,7 +123,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Out of Questions");
+            // Debug.Log("Out of Questions");
             GameOver();
         }
 
