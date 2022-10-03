@@ -54,8 +54,8 @@ public class StarSystem : MonoBehaviour
         i = 0; information[i] = new Star() { btn_id = 0,  btn = btn[0], name = "QZ Normae", status = 0, category = 0, target_canvas = Canvas_Article, target_star = cv[0],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 1; information[i] = new Star() { btn_id = 1,  btn = btn[1], name = "R Trianguli Austrlis", status = 0, category = 0, target_canvas = Canva_Simulator[0], target_star = cv[1],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 2; information[i] = new Star() { btn_id = 2,  btn = btn[2], name = "R Muscae", status = 0, category = 0, target_canvas = Canvas_Distance, target_star = cv[2],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
-        i = 3; information[i] = new Star() { btn_id = 3,  btn = btn[3], name = "UU Muscae", status = 0, category = 0, target_canvas = Canvas_Article, target_star = cv[3],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
-        i = 4; information[i] = new Star() { btn_id = 4,  btn = btn[3], name = "BZ Tucanae", status = 0, category = 0, target_canvas = Canva_Simulator[0], target_star = cv[4],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
+        i = 3; information[i] = new Star() { btn_id = 3,  btn = btn[3], name = "UU Muscae", status = 0, category = 0, target_canvas = Canva_Simulator[0], target_star = cv[3],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
+        i = 4; information[i] = new Star() { btn_id = 4,  btn = btn[3], name = "BZ Tucanae", status = 0, category = 0, target_canvas = Canvas_Article, target_star = cv[4],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 5; information[i] = new Star() { btn_id = 5,  btn = btn[3], name = "V636", status = 0, category = 0, target_canvas = Canvas_Distance, target_star = cv[5],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
 
         i = 6; information[i] = new Star() { btn_id = 6,  btn = btn[4], name = "TV Corvi", status = 0, category = 1, target_canvas = Canvas_Article, target_star = dn[0],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
@@ -66,13 +66,13 @@ public class StarSystem : MonoBehaviour
 
         i = 10; information[i] = new Star() { btn_id = 10, btn = btn[8], name = "KZ pavonis", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[0],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 11; information[i] = new Star() { btn_id = 11, btn = btn[9], name = "AR pavonis", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[1],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
-        i = 12; information[i] = new Star() { btn_id = 12, btn = btn[10], name = "V681", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[2],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
+        i = 12; information[i] = new Star() { btn_id = 12, btn = btn[10], name = "V681", status = 0, category = 3, target_canvas = Canva_Simulator[3], target_star = eb[2],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 13; information[i] = new Star() { btn_id = 13, btn = btn[11], name = "VZ Librae", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[3],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 14; information[i] = new Star() { btn_id = 14, btn = btn[11], name = "54 VirginisA", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[4],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         i = 15; information[i] = new Star() { btn_id = 15, btn = btn[11], name = "V Crateris", status = 0, category = 3, target_canvas = Canvas_Article, target_star = eb[5],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
         
         i = 16; information[i] = new Star() { btn_id = 16, btn = btn[12], name = "Spica", status = 0, category = 4, target_canvas = Canvas_Article, target_star = el[0],  enabled = enabled_icon[i], disabled = disabled_icon[i]};
-        i = 17; information[i] = new Star() { btn_id = 17, btn = btn[13], name = "V831", status = 0, category = 4, target_canvas = Canvas_Article, target_star = el[1], enabled = enabled_icon[i], disabled = disabled_icon[i]}; 
+        i = 17; information[i] = new Star() { btn_id = 17, btn = btn[13], name = "V831", status = 0, category = 4, target_canvas = Canva_Simulator[4], target_star = el[1], enabled = enabled_icon[i], disabled = disabled_icon[i]}; 
     }
 
     public static void level_pass()
