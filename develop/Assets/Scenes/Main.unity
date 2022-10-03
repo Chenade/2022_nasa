@@ -509,7 +509,6 @@ GameObject:
   - component: {fileID: 14588705}
   - component: {fileID: 14588704}
   - component: {fileID: 14588703}
-  - component: {fileID: 14588702}
   m_Layer: 10
   m_Name: a_small
   m_TagString: Untagged
@@ -525,30 +524,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 14588700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -726.48, y: -410.33, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
+  m_LocalPosition: {x: -726.86, y: -410.47, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1983009740}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14588702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14588700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 8c4ad0ab719d88649b198f64a5e6739d, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
 --- !u!135 &14588703
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -582,7 +564,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5cc9ec603ad5c8d45a92cfcb98ab6ffb, type: 2}
+  - {fileID: 2100000, guid: 511222dbeb6b9774b818d11513bdace3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10075,7 +10057,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 596685012}
   m_OnClick:
     m_PersistentCalls:
@@ -11434,7 +11416,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d03364bedf9119c47bbbd1c4cf37202b, type: 2}
+  - {fileID: 2100000, guid: 6a2af692a09093b4a963f29509d0799a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -28353,7 +28335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -6.586, y: 108.784}
+  m_AnchoredPosition: {x: -6.5860596, y: 108.784}
   m_SizeDelta: {x: -626.444, y: 126.304}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1809253121

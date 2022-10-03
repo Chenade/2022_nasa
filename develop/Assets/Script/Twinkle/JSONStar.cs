@@ -29,7 +29,7 @@ public class JSONStar : MonoBehaviour
     public static curveList information = new curveList();
     // public static Info section;
 
-    void Start()
+    void Awake()
     {
         information_debug = JsonUtility.FromJson<curveList>(jsonFile.text);
         information = JsonUtility.FromJson<curveList>(jsonFile.text);

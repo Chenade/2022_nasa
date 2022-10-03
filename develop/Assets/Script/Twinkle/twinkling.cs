@@ -33,7 +33,7 @@ public class twinkling : MonoBehaviour
             if (Mathf.Abs(timestamp - JSONStar.information.data[star_id].curve[i].x) < 0.5f)
             {
                 intensity = JSONStar.information.data[star_id].curve[i].y;
-                Debug.Log(intensity);
+                // Debug.Log(intensity);
                 _light.range = intensity;
                 break ;
             }
