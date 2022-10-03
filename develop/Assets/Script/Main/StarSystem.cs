@@ -83,8 +83,11 @@ public class StarSystem : MonoBehaviour
             case (17):
                 break ;
             default :
-                information[MainSystem.current_id + 1].btn.image.overrideSprite = information[MainSystem.current_id + 1].enabled;
+                information[MainSystem.current_id].btn.image.overrideSprite = information[MainSystem.current_id].enabled;
+              // information[MainSystem.current_id + 1].btn.image.overrideSprite = information[MainSystem.current_id + 1].disabled;
                 information[MainSystem.current_id + 1].btn.interactable = true;
+                // information[MainSystem.current_id + 1].btn.image.overrideSprite = information[MainSystem.current_id + 1].enabled;
+                // information[MainSystem.current_id + 1].btn.interactable = true;
                 break ;
         }
         // btn.image.overrideSprite = off;
