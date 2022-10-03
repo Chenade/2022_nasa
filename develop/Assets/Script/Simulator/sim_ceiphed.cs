@@ -25,13 +25,15 @@ public class sim_ceiphed : MonoBehaviour
         _pp.profile.TryGetSettings(out _bloom);
         rt = image.GetComponent<RectTransform>();
         float width = rt.rect.width;
+        image.rectTransform.localScale = new Vector3(1, 1, 1);
+        image.rectTransform.anchoredPosition = new Vector3(0, 0, 0);
+        finish.SetActive(false);
 
         for (int i = 0 ; i < 10; i ++)
         {
             d[i] = Image.Instantiate(image);
             d[i].transform.SetParent(chart.transform);
-            d[i].rectTransform.anchoredPosition = new Vector3(width * (i + 1), 0, 0);
-            // cw += cw;
+            d[i].rectTransform.anchoredPosition = new Vector3(width * (i), 0, 0);
         }
 
         _slider.onValueChanged.AddListener((v) => {
@@ -46,7 +48,6 @@ public class sim_ceiphed : MonoBehaviour
                 d[i] = Image.Instantiate(image);
                 d[i].transform.SetParent(chart.transform);
                 d[i].rectTransform.anchoredPosition = new Vector3(cw * (i + 1), 0, 0);
-                // cw += cw;
             }
             if (v == 3f)
                 finish.SetActive(true);

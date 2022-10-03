@@ -35,12 +35,9 @@ public class QuizManager : MonoBehaviour
         count = 0;
         GoPanel.SetActive(false);
         Quizpanel.SetActive(true);
-        MainSystem.category = 1;
         JsonReader.section = JsonReader.information.game[MainSystem.category];
         for(int i = 0; i < JsonReader.section.quiz.Length; i ++)
-        {
             quest.Add(i);
-        }
         generateQuestion();
    }
 
@@ -79,13 +76,15 @@ public class QuizManager : MonoBehaviour
     public void correct()
     {
         score += 1;
-        quest.RemoveAt(index);
+        if (quest.Count - 1 > index)
+            quest.RemoveAt(index);
         StartCoroutine(waitForNext());
     }
 
     public void wrong()
     {
-        quest.RemoveAt(index);
+        if (quest.Count - 1 > index)
+            quest.RemoveAt(index);
         StartCoroutine(waitForNext());
     }
 
