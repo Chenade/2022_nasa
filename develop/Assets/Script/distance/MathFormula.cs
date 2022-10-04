@@ -16,6 +16,23 @@ public class MathFormula : MonoBehaviour
     public string theInput;
     public GameObject btn;
 
+    // GameObject FadePannel;
+    
+    // //페이드 아웃
+    // public IEnumerator FadeInStart()
+    // {
+    //     FadePannel.SetActive(true);
+    //     for (float f = 1f; f > 0; f -= 0.02f)
+    //     {
+    //         Color c = FadePannel.GetComponent<Image>().color;
+    //         c.a = f;
+    //         FadePannel.GetComponent<Image>().color = c;
+    //         yield return null;
+    //     }
+    //     yield return new WaitForSeconds(1);
+    //     FadePannel.SetActive(false);
+    // }
+
     public void Update() 
     {
         int ans = 0;
@@ -47,7 +64,7 @@ public class MathFormula : MonoBehaviour
         Distance.text = d.ToString();
         float am = absoluteMagnitude();
         AM.text = am.ToString();
-        if (AM.text == "-3.220324" && Distance.text == "271.6845") btn.SetActive(true);
+        if (AM.text == "-3.438262" && Distance.text == "300.3671") btn.SetActive(true);
     }
  
     public float checkInputperiod()
