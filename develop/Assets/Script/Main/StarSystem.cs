@@ -79,12 +79,12 @@ public class StarSystem : MonoBehaviour
     {
         switch(MainSystem.current_id)
         {
-            // case (3):
-            // case (6):
-            // case (9):
-            // case (13):
-            // case (17):
-            //     break ;
+            case (5):
+            case (6):
+            case (9):
+            case (15):
+            case (17):
+                break ;
             default :
                 information[MainSystem.current_id + 1].btn.image.overrideSprite = information[MainSystem.current_id + 1].disabled;
                 information[MainSystem.current_id + 1].btn.interactable = true;
