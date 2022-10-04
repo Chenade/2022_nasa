@@ -62,7 +62,7 @@ public class sim_ceiphed : MonoBehaviour
                 d[i].rectTransform.localScale = new Vector3(v / 4, 1, 1);
                 d[i].rectTransform.anchoredPosition = new Vector3(cw * (i + 1), 0, 0);
             }
-            if (MainSystem.current_id == 1 && v == 3f || MainSystem.current_id == 3 && v == 5f)
+            if (MainSystem.current_id == 1 && v == 3f || MainSystem.current_id == 3 && v == 7f)
                 finish.SetActive(true);
             // else if (MainSystem.current_id == 3 && v == 5f)
                 // finish.SetActive(true);
