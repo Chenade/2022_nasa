@@ -2810,15 +2810,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69e16469c72afe4ca50ecf6298204a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canva_main: {fileID: 0}
-  Canva_minigame: {fileID: 0}
+  Canva_main: {fileID: 1113488159}
+  Canva_minigame: {fileID: 127610020}
   Category: 0
-  Canva_Article: {fileID: 0}
+  Canva_Article: {fileID: 12973728}
   ArticleManager: {fileID: 0}
-  Canva_Simulator: []
-  Canva_Distance: {fileID: 0}
-  nightsky: {fileID: 0}
-  nightsky_empty: {fileID: 0}
+  Canva_Simulator:
+  - {fileID: 0}
+  - {fileID: 0}
+  Canva_Distance: {fileID: 169698506}
+  nightsky: {fileID: 1304330656}
+  nightsky_empty: {fileID: 15985510}
   btn: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
@@ -4533,15 +4535,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69e16469c72afe4ca50ecf6298204a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canva_main: {fileID: 0}
-  Canva_minigame: {fileID: 0}
+  Canva_main: {fileID: 1113488159}
+  Canva_minigame: {fileID: 127610020}
   Category: 0
-  Canva_Article: {fileID: 0}
+  Canva_Article: {fileID: 12973728}
   ArticleManager: {fileID: 0}
-  Canva_Simulator: []
-  Canva_Distance: {fileID: 0}
-  nightsky: {fileID: 0}
-  nightsky_empty: {fileID: 0}
+  Canva_Simulator:
+  - {fileID: 0}
+  - {fileID: 0}
+  Canva_Distance: {fileID: 169698506}
+  nightsky: {fileID: 1304330656}
+  nightsky_empty: {fileID: 15985510}
   btn: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
@@ -6340,15 +6344,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69e16469c72afe4ca50ecf6298204a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canva_main: {fileID: 0}
-  Canva_minigame: {fileID: 0}
+  Canva_main: {fileID: 1113488159}
+  Canva_minigame: {fileID: 127610020}
   Category: 0
-  Canva_Article: {fileID: 0}
+  Canva_Article: {fileID: 12973728}
   ArticleManager: {fileID: 0}
-  Canva_Simulator: []
-  Canva_Distance: {fileID: 0}
-  nightsky: {fileID: 0}
-  nightsky_empty: {fileID: 0}
+  Canva_Simulator:
+  - {fileID: 0}
+  - {fileID: 0}
+  Canva_Distance: {fileID: 169698506}
+  nightsky: {fileID: 1304330656}
+  nightsky_empty: {fileID: 15985510}
   btn: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
@@ -27696,7 +27702,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 205653a96151c6b40bf24b95220602f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc6630ba566eb4a04a1a0931c5df9c87, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -45005,15 +45011,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69e16469c72afe4ca50ecf6298204a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Canva_main: {fileID: 0}
-  Canva_minigame: {fileID: 0}
+  Canva_main: {fileID: 1113488159}
+  Canva_minigame: {fileID: 127610020}
   Category: 0
-  Canva_Article: {fileID: 0}
+  Canva_Article: {fileID: 12973728}
   ArticleManager: {fileID: 0}
-  Canva_Simulator: []
-  Canva_Distance: {fileID: 0}
-  nightsky: {fileID: 0}
-  nightsky_empty: {fileID: 0}
+  Canva_Simulator:
+  - {fileID: 0}
+  - {fileID: 0}
+  Canva_Distance: {fileID: 169698506}
+  nightsky: {fileID: 1304330656}
+  nightsky_empty: {fileID: 15985510}
   btn: {fileID: 0}
   on: {fileID: 0}
   off: {fileID: 0}
@@ -48432,6 +48440,8 @@ MonoBehaviour:
   - {fileID: 596685011}
   - {fileID: 1099324351}
   - {fileID: 181908852}
+  - {fileID: 1933037331}
+  - {fileID: 234220511}
   - {fileID: 1144698142}
   - {fileID: 2050689115}
   - {fileID: 1602069180}
@@ -48440,6 +48450,8 @@ MonoBehaviour:
   - {fileID: 1359487444}
   - {fileID: 1135738755}
   - {fileID: 1713885602}
+  - {fileID: 155150960}
+  - {fileID: 80914431}
   - {fileID: 300461308}
   - {fileID: 32389710}
   enabled_icon:
@@ -48448,8 +48460,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0c3c7a467a1a7fb438bd24bf311a63c4, type: 3}
   - {fileID: 21300000, guid: 1340b5f378991364c9280b48d1b3e454, type: 3}
   - {fileID: 21300000, guid: 65fd07993581908429e6e395fecec840, type: 3}
-  - {fileID: 21300000, guid: f1ada8fbb8c45fe4cacf1c5ae1926aaa, type: 3}
-  - {fileID: 21300000, guid: 7f67f86b47a74dc43ac61bc19724b912, type: 3}
+  - {fileID: 21300000, guid: 1e2e6aadb574f4040b79315debd057a8, type: 3}
+  - {fileID: 21300000, guid: 8afc561edad9b5b41b4bb7a8c45da6e4, type: 3}
   - {fileID: 21300000, guid: e45b2d3ac42b0494c8d785b34f8a0f69, type: 3}
   - {fileID: 21300000, guid: 1289e184201e11646b39639b2c68ba33, type: 3}
   - {fileID: 21300000, guid: 59f706925ea24f7439660d548e4215a6, type: 3}
