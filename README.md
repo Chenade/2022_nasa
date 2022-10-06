@@ -6,10 +6,18 @@
 
 ---
 
-- Instruction
-  - clone the project under the root of web server
-  - open the brower to the web server
-
+- Instructions
+  - Rebulid： WebGL
+    -  Download WebGl.zip: https://github.com/Chenade/2022_nasa/blob/main/webGL.zip
+    -  Extract at webServer access location (Apache, Nginx) (example: Xampp on Windows, extract to /xampp/htdocs)
+    -  Visit Web Server in browser (example: 127.0.0.1/)
+  - Rebuild: Unity
+    - Download Unity Hub & Unity at version 2022.1.19
+    - Clone project
+    - Open Unity Hub
+    - Use "Add Package" to open cloned folder
+    - Click on package in Unity Hub
+    - Click play button (at the top of Unity)
 ---
 
 - Registration
