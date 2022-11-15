@@ -8,27 +8,42 @@ public class twinkling : MonoBehaviour
     public float intensity = 1f;
     public float delta = -1;
     public float step = 0.01f;
+    public int star_id;
 
     public float timestamp;
 
     void Start()
     {
         // StartCoroutine(twinkle());
-        intensity = 1f;
-        _light.intensity = intensity;
+        // star_id = 0;
+        // intensity = 1f;
         timestamp = 0f;
+        intensity = JSONStar.information.data[star_id].curve[0].y;
+        _light.range = intensity;
     }
 
     void FixedUpdate()
     {
         timestamp += MainSystem.time_rate * Time.deltaTime;
-        if (intensity >= 1f)
-            delta = -1;
-        if (intensity <= 0f)
-            delta = 1;
 
-        intensity += ((step * MainSystem.time_rate) * delta) ;
-        _light.intensity = intensity;
+        for(int i = 1; i < JSONStar.information.data[star_id].curve.Length; i ++)
+        {
+            // Debug.Log(JSONStar.information.data[star_id].curve[i].x + " => " + Mathf.Abs(timestamp - JSONStar.information.data[star_id].curve[i].x));
+
+            if (Mathf.Abs(timestamp - JSONStar.information.data[star_id].curve[i].x) < 0.5f)
+            {
+                intensity = JSONStar.information.data[star_id].curve[i].y;
+                // Debug.Log(intensity);
+                _light.range = intensity;
+                break ;
+            }
+        }
+        if (timestamp > JSONStar.information.data[star_id].curve[JSONStar.information.data[star_id].curve.Length - 1].x)
+        {
+            timestamp = 0;
+            intensity = JSONStar.information.data[star_id].curve[0].y;
+        }
+        // _light.range = intensity;
 
     }
 

@@ -11,20 +11,22 @@ public class SuperFormula : MonoBehaviour
     public TMP_Text Distance;
     float inputApparentMagnitute;
     public string theInput;
+    public GameObject btn;
 
-     public void Update() 
-     {
-        if (Input.GetKeyDown (KeyCode.Return)) 
-         {
-            float d = m_distance();
-            Distance.text = "Distance = " + d.ToString() + " pc";
-         }
-
-         if (Input.GetKeyDown(KeyCode.Mouse0)) 
-         {
+    public void Update() 
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0)) 
+        {
             fields[0].Select();
-         }
-     }
+        }
+    }
+
+    public void cal()
+    {
+        float d = m_distance();
+        Distance.text = "Distance = " + d.ToString() + " pc";
+        btn.SetActive(true);
+    }
 
     public float m_checkInputApparentMagnitute()
     {
@@ -37,7 +39,7 @@ public class SuperFormula : MonoBehaviour
         }
         else
         {
-            Debug.Log("Darling, this is not working");
+            // Debug.Log("Darling, this is not working");
             return (0);
         }
     }

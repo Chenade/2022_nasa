@@ -17,21 +17,35 @@ public class sim_ceiphed : MonoBehaviour
     public GameObject Sphere;
     public GameObject chart;
     public GameObject finish;
+    public Image[] curve;
 
     public Image[] d = new Image[10];
-    void Start()
+    void OnEnable()
     {
+        // MainSystem.current_id = 3;
+        if (MainSystem.current_id == 1)
+        {
+            curve[0].enabled  = (true);
+            curve[1].enabled  = (false);
+        }
+        else
+        {
+            curve[0].enabled  = (false);
+            curve[1].enabled  = (true);
+        }
         _pp = Sphere.GetComponent<PostProcessVolume>();
         _pp.profile.TryGetSettings(out _bloom);
         rt = image.GetComponent<RectTransform>();
         float width = rt.rect.width;
+        image.rectTransform.localScale = new Vector3(1, 1, 1);
+        image.rectTransform.anchoredPosition = new Vector3(0, 0, 0);
+        finish.SetActive(false);
 
         for (int i = 0 ; i < 10; i ++)
         {
             d[i] = Image.Instantiate(image);
             d[i].transform.SetParent(chart.transform);
-            d[i].rectTransform.anchoredPosition = new Vector3(width * (i + 1), 0, 0);
-            // cw += cw;
+            d[i].rectTransform.anchoredPosition = new Vector3(width * (i), 0, 0);
         }
 
         _slider.onValueChanged.AddListener((v) => {
@@ -45,11 +59,13 @@ public class sim_ceiphed : MonoBehaviour
             {
                 d[i] = Image.Instantiate(image);
                 d[i].transform.SetParent(chart.transform);
+                d[i].rectTransform.localScale = new Vector3(v / 4, 1, 1);
                 d[i].rectTransform.anchoredPosition = new Vector3(cw * (i + 1), 0, 0);
-                // cw += cw;
             }
-            if (v == 3f)
+            if (MainSystem.current_id == 1 && v == 3f || MainSystem.current_id == 3 && v == 7f)
                 finish.SetActive(true);
+            // else if (MainSystem.current_id == 3 && v == 5f)
+                // finish.SetActive(true);
             else
                 finish.SetActive(false);
         });
@@ -72,6 +88,9 @@ public class sim_ceiphed : MonoBehaviour
 
     public void Submit()
     {
+        for (int i = 0 ; i < 10; i ++)
+            if(d[i]) Destroy(d[i]);
+        StarSystem.level_pass();
         MainSystem.mission = 3;
         MainSystem.is_mission = false;
         StarSystem.information[MainSystem.current_id].target_star.SetActive(true);

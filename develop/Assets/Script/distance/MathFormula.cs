@@ -14,19 +14,40 @@ public class MathFormula : MonoBehaviour
     float inputPeriod;
     float inputApparentMagnitute;
     public string theInput;
+    public GameObject btn;
+
+    // GameObject FadePannel;
+    
+    // //페이드 아웃
+    // public IEnumerator FadeInStart()
+    // {
+    //     FadePannel.SetActive(true);
+    //     for (float f = 1f; f > 0; f -= 0.02f)
+    //     {
+    //         Color c = FadePannel.GetComponent<Image>().color;
+    //         c.a = f;
+    //         FadePannel.GetComponent<Image>().color = c;
+    //         yield return null;
+    //     }
+    //     yield return new WaitForSeconds(1);
+    //     FadePannel.SetActive(false);
+    // }
 
     public void Update() 
     {
-        if (Input.GetKeyDown (KeyCode.Return)) 
-        {
-            float d = distance();
-            Distance.text = d.ToString();
-        }
-        if (Input.GetKeyDown (KeyCode.Return)) 
-        {
-            float am = absoluteMagnitude();
-            AM.text = am.ToString();
-        }
+        int ans = 0;
+        // if (Input.GetKeyUp(KeyCode.Alpha0)||Input.GetKeyUp(KeyCode.Alpha1)||Input.GetKeyUp(KeyCode.Alpha2)||Input.GetKeyUp(KeyCode.Alpha3)||Input.GetKeyUp(KeyCode.Alpha4)||Input.GetKeyUp(KeyCode.Alpha5)||Input.GetKeyUp(KeyCode.Alpha6)||Input.GetKeyUp(KeyCode.Alpha7)||Input.GetKeyUp(KeyCode.Alpha8)||Input.GetKeyUp(KeyCode.Alpha9)) 
+        // {
+        //     float d = distance();
+        //     Distance.text = d.ToString();
+        //     if (absoluteMagnitude() == -3.220324f && distance() == 271.6845f) btn.SetActive(true);
+        // }
+        // if (Input.GetKeyUp(KeyCode.Alpha0)||Input.GetKeyUp(KeyCode.Alpha1)||Input.GetKeyUp(KeyCode.Alpha2)||Input.GetKeyUp(KeyCode.Alpha3)||Input.GetKeyUp(KeyCode.Alpha4)||Input.GetKeyUp(KeyCode.Alpha5)||Input.GetKeyUp(KeyCode.Alpha6)||Input.GetKeyUp(KeyCode.Alpha7)||Input.GetKeyUp(KeyCode.Alpha8)||Input.GetKeyUp(KeyCode.Alpha9)) 
+        // {
+        //     float am = absoluteMagnitude();
+        //     AM.text = am.ToString();
+        //     if (absoluteMagnitude() == -3.220324f && distance() == 271.6845f) btn.SetActive(true);
+        // }
         if (Input.GetKeyDown(KeyCode.DownArrow)) 
         {
             fields[1].Select();
@@ -35,6 +56,15 @@ public class MathFormula : MonoBehaviour
         {
             fields[0].Select();
         }
+    }
+
+    public void cal()
+    {
+        float d = distance();
+        Distance.text = d.ToString();
+        float am = absoluteMagnitude();
+        AM.text = am.ToString();
+        if (AM.text == "-3.438262" && Distance.text == "300.3671") btn.SetActive(true);
     }
  
     public float checkInputperiod()
@@ -48,7 +78,7 @@ public class MathFormula : MonoBehaviour
         }
         else
         {
-            Debug.Log("Darling, this is not working");
+            // Debug.Log("Darling, this is not working");
             return (0);
         }
     }
@@ -64,7 +94,7 @@ public class MathFormula : MonoBehaviour
         }
         else
         {
-            Debug.Log("Darling, this is not working");
+            // Debug.Log("Darling, this is not working");
             return (0);
         }
     }
@@ -79,8 +109,7 @@ public class MathFormula : MonoBehaviour
         return(ma);
     }
 
-    float distance()
-    {
+    float distance()    {
         float d;
         float am = absoluteMagnitude();
         float ap = checkInputApparentMagnitute();
